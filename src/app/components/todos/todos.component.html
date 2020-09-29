@@ -1,2 +1,7 @@
-<app-todo-item *ngFor="let todo of todos" [todo]="todo">
+<app-todo-item 
+*ngFor="let todo of todos" 
+[todo]="todo"
+(deleteTodo)="deleteTodo($event)"
+>
+<!-- it is used with the emmiter, this is the output  (deleteTodo) and the eventemiter is in the todo-item-->
 </app-todo-item>
