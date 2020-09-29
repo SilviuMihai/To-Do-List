@@ -11,7 +11,7 @@ export class TodoService {
   todosLimit:string = '?_limit=5';
   todosUrl:string = 'https://jsonplaceholder.typicode.com/todos';
 
-  const httpOptions = {
+   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
